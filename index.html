@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio de Heritiana</title>
+    <style>
+            body{
+                   font-family: Arial, Helvetica, sans-serif;
+                    margin: 0;
+                    padding-inline-start: 0;
+                    background-color: #fff;
+                     }
+         header{
+                    background-color: #49499c;
+                    padding: 10px 20px;
+                     }
+        .profil-img{
+            border-radius: 200%;
+            width: 200px;
+        }
+        nav{
+            display:flex ;
+            justify-self: space-between;
+            align-items: center;
+        }
+        .logo{ 
+            font-size: 24px;
+            font-weight: bold;
+            color: orange;
+        }
+        .menu-icon{
+             background-color: #fff;
+             width: 30px;
+             height: 3px;
+             position: relative;
+        }
+        .profil{
+            text-align: center;
+            padding: 20px;
+        }
+        .profil h1{
+            font-size: 24px;
+            color: #fff;
+        }
+        .profil h1 span {
+            color: rgb(12, 172, 240);
+        }
+        .horizontal{
+            color: rgb(12, 103, 178);
+            font-size: 18px;
+            text-align: center;
+        }
+        .a-propos{
+            text-align: center;
+            padding: 10px;
+            background-color: #1790ae;
+            border-radius: 50px;
+        }
+        .a-propos h2{
+            color: purple;
+
+        }
+        #competences{
+            padding: 20px;
+            text-align: center;
+        }
+        .parcours-categorie{
+            padding: 20px;
+            background-color: #477bc9;
+            text-align: left;
+            border-radius: 20px;
+        }
+        .contact{
+            padding: 20px;
+            background-color: #4770c9;
+            text-align: left;
+            border-radius: 20px;
+        }
+        .parcours-categorie h3{
+            text-align: center;
+        }
+        .contact h3{
+            text-align:center ;
+        }
+        #competences h1{
+            color: #0f6c94;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .competence-categorie{
+            background-color: #8f868f;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius:20px;
+        }
+        .competence-categorie h3{
+            color:#2e1f1f;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .competence-categorie ol{
+            list-style: none;
+            padding: 0%;
+            margin: 0%;
+        }
+        .competence-categorie li{
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .competence-categorie span{
+            color: #e2d1d1;
+            font-size: 14px;
+        }
+        progress{
+            width: 50%;
+            height: 10px;
+            border: navy;
+            border-radius: 5px;
+            background-color: #686565;
+        }
+        progress::-webkit-progress-bar{
+            background-color: #913838;
+        }
+        progress::-webkit-progress-value{
+            background-color: #fff;
+        }
+        .container h1{
+            
+            margin: 30px 0;
+            color: #b983ff;
+        }
+        .card{
+            border-radius: 150px;
+            backdrop-filter: blur(10px);
+            border: 1px;
+            padding: 25px;
+            margin-bottom: 20px;
+            background-color: rgb(27, 99, 155);
+            transition: 0,4s;
+        }
+
+        #video-bg{
+            position: fixed;
+            top: 0;
+            z-index: -10;
+            object-fit: cover;
+            width: 100vw;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <video autoplay muted loop id="video-bg">
+        <source src="mino.mp4">
+    </video>
+ <header>
+    <nav>
+        <div class="logo">Portfolio de Heritiana</div>
+        <div class="menu"><span class="menu-icon"></span>
+        </div>
+    </nav>
+ </header> 
+ <main>
+    <section class="profil">
+        <img src="IMG.jpg" alt="Heritiana RAMISIARISON" class="profil-img">
+      <h1>Bonjour, moi c'est <span>Heritiana RAMISIARISON</span></h1> 
+      <p class="horizontal"><marquee>passionné par le developpement web</marquee></p> 
+    </section>
+ <section class="a-propos">
+    <h2>A propos de moi</h2>
+    <hr>
+    <p>je m'appelle Heritiana Ramisiarison. Etudiant en premiére année de licence,je suis motivé et vraiment passionné par l'informatique surtout dans l'univers du developpement web.</p>
+    <p>chaque projet est un occasion d'apprendre, d'innover et de me passer car <em>"J'apprends, je créer et j'innover à chaque projet"</em></p>
+    </section>
+    <section id="competences">
+        <h1>Mes competences</h1>
+        <p>Découvrez mes compétences technique acquises au fil de mes projet</p>
+        <div class="competence-categorie">
+            <h3>Développement web</h3>
+            <hr>
+            <ol>
+                <li>
+                    <span>HTML 86%</span>
+                    <li><progress value="86" max="100"></progress></li>
+                </li>
+                <li>
+                    <span>CSS 80%</span>
+                    <li><progress value="80" max="100"></progress></li>
+                </li>
+                <li>
+                    <span>TailwindCss 65%</span>
+                    <li><progress value="65" max="100"></progress></li>
+                </li>
+                <li>
+                    <span>JavaScript 60%</span>
+                    <li><progress value="60" max="100"></progress></li>
+                </li>
+                <li>
+                    <span>React.js 55%</span>
+                   <li><progress value="55" max="100"></progress></li>
+                </li>
+            </ol>
+        </div>
+        <div class="competence-categorie"> 
+            <h3>Programmations</h3>
+            <hr>
+            <ul>
+                <li>
+                    <span>Python 75%</span>
+                    <li><progress value="75" max="100"></progress></li>
+                </li>
+            </ul>
+        </div>
+        <div class="competence-categorie">
+            <h3>Bases des données</h3>
+            <hr>
+            <ol>
+                <li>
+                    <span>MySQL 60%</span>
+                    <li><progress value="60" max="100"></progress></li>
+    
+                </li>
+                <li>
+                    <span>SQLite 50%</span>
+                   <li><progress value="55" max="100"></progress></li>
+                </li>
+                <li>
+                    <span>Microsoft Access 80%</span>
+                    <li><progress value="80" max="100"></progress></li>
+                </li>
+                </ol>
+                
+        </div>
+        <div class="competence-categorie">
+            <h3>Outils</h3>
+            <hr>
+            <ol>
+                <li><span>GitHub 80%</span></li>
+                <li><progress value="80" max="100"></progress></li>
+                <li><span> vs code 90%</span></li>
+                <li><progress value="90" max="100"></progress></li>
+            </ol>
+        </div>
+<div class="container">
+    <h1>Mes soft Skills</h1>
+    <div class="card">
+    <div class="icon team">👨‍👧‍👧</div>
+    <h2>Travail en équipe</h2>
+</div>
+      <div class="card">
+        <div class="icon leader">🧍‍♂️</div>
+        <h2>Leadership</h2>
+
+      </div>  
+<div class="card">
+    <div class="icon comm">💬</div>
+    <h2>Communication</h2>
+</div>
+<div class="card">
+    <div class="icon problrm">&lt;/&gt;</div>
+    <h2>Résolution des problème</h2>
+</div>
+<div class="card">
+     <div class="icon creative">🛠🔨⚙✂</div>
+     <h2>Créativité</h2>
+</div>
+ <div class="parcours">
+    <h1>Mon parcours</h1>
+    <p>Découvrez mon parcours scolaire et réalisation en informatique</p>
+ </div>
+ <div class="parcours-categorie">
+    <h3>Etudes supérieures</h3>
+    <hr>
+<ul><li><h4>EMIT Fianarantsoa:</h4>
+    <ul><li>Mention : Informatique</li>
+    <li>Parcours : DA2I</li></ul>
+<li><h4>Compétences developpées : </h4>
+<ul><li> Prpgrammation ( Python,C++)</li></ul>
+<ul><li>Bases des données</li></ul>
+<ul><li> Développement d'application et projet pratique</li></ul>
+<ul><li>Algoritheme et structure de données</li></ul></li> </ul>
+ </div>
+<div class="contacte">
+    <h1>Mes contacts</h1>
+</div>
+<div class="contact">
+<h3>Contacter moi 📞📱</h3>
+<hr>
+<ul>
+    <li><b>📞 Télephone : </b> +261322081498</li>
+    <li><b>📧 Gmail : </b><a href="ramisiarison@gmail.com">ramisiarison@gmail.com</a></li>
+    <li><b>💬WhatsApp : </b> +261343015199</li>
+    <li><b>Adresse : </b> Ambodirano Fianarantsoa</li>
+</ul>
+</div>
+    </section>
+  </main>
+ </body>
+</html>
